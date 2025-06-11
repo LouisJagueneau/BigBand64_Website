@@ -32,7 +32,7 @@ function Layout({ children }) {
                 <div className="flex flex-row gap-4 mt-5 mb-10">
                     {/* Facebook */}
                     <a
-                        href="https://www.facebook.com"
+                        href="https://www.facebook.com/profile.php?id=61576006091265"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="border-2 border-white rounded-full p-4 hover:bg-white group transition"

@@ -16,10 +16,16 @@ function Home() {
           <h2 className="text-black font-shrikhand text-[2.0rem] text-center leading-relaxed lg:text-start">L'énergie du Swing pour faire danser vos soirées !</h2>
           <p className="leading-loose mt-5 font-istokweb text-[0.95rem] text-justify">Nous sommes un groupe de musiciens passionnés, réunis autour du swing. Ouverts aux danseurs, nous animons vos soirées avec un répertoire irrésistible : Lindy Hop, Balboa, Blues, West Coast Swing, Tcha-Tcha… et bientôt des rythmes latinos !</p>
           <div className="flex flex-row gap-14 justify-center items-center mt-8">
-            <button className="font-poppins bg-[#FF7723] text-white font-semibold px-4 py-2 rounded-[5px] flex items-center gap-2 cursor-pointer">Nos Événements <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
-              <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
-            </svg></button>
-            <button className="font-poppins border-2 border-[#FF7723] rounded-[5px] px-3 py-2 text-[#FF7723] font-semibold cursor-pointer">Notre Musique</button>
+            <button onClick={() => {
+              const section = document.getElementById('event');
+              section?.scrollIntoView({ behavior: 'smooth' });
+            }} className="font-poppins bg-[#FF7723] text-white font-semibold px-4 py-2 rounded-[5px] flex items-center gap-2 cursor-pointer">Nos Événements <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+              </svg></button>
+            <button onClick={() => {
+              const section = document.getElementById('music');
+              section?.scrollIntoView({ behavior: 'smooth' });
+            }} className="font-poppins border-2 border-[#FF7723] rounded-[5px] px-3 py-2 text-[#FF7723] font-semibold cursor-pointer">Notre Musique</button>
           </div>
         </div>
       </div>
