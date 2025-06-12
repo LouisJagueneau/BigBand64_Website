@@ -70,7 +70,7 @@ function Home() {
 
           {/* Colonne droite : Membres */}
           <div className="lg:w-2/7 mt-12 lg:mt-0 ">
-            <div className="grid grid-cols-2 gap-6 lg:grid-cols-1 h-full">
+            <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-1 h-full">
 
               <div className="bg-white shadow-md rounded-[10px] flex flex-col px-8 py-6 h-full">
                 <div className="flex items-center gap-3 mb-5">
