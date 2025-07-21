@@ -1,6 +1,7 @@
 import WelcomeImage from "../assets/WelcomeImage.svg"
 import SwingDance from "../assets/BB64Danseur Swing.svg"
 import EventImage from "../assets/EventImage1.png"
+import EventImage2 from "../assets/EventImage2.jpg"
 
 function Home() {
   return (
@@ -122,32 +123,61 @@ function Home() {
       {/* Évènement à venir */}
       <div className="flex flex-col items-center mt-16 ">
         <div className="flex flex-col items-center">
-          <h2 id="event" className="font-shrikhand text-[1.8rem]">ÉVÉNEMENT À VENIR</h2>
+          <h2 id="event" className="font-shrikhand text-[1.8rem]">ÉVÉNEMENTS</h2>
           <span className="border-3 border-[#FF7723] block w-[110%] items-center"></span>
         </div>
 
-        <div className="bg-white rounded-[10px]  border-b-2 border-b-[#FF7723] flex flex-col items-center mt-10 px-6 py-6 w-[25rem]">
-          <img src={EventImage} alt="Image de l'évènement" className="w-full h-[200px] object-cover shadow-md" />
-          <div className="mt-5 flex flex-col gap-3">
-            <div className="flex flex-row justify-between items-center">
-              <h4 className="font-semibold font-istokweb text-[1.4rem]">Fête de la musique</h4>
-              <span className="rounded-[10px] bg-[#ffe7b7] text-[#FCC12A] text-[0.7rem] px-2  flex items-center">A VENIR</span>
+        <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-6 xl:gap-10">
+          {/* Event 1 */}
+          <div className="bg-white rounded-[10px]  border-b-2 border-b-[#FF7723] flex flex-col items-center mt-10 px-6 py-6 w-[25rem]">
+            <img src={EventImage} alt="Image de l'évènement" className="w-full h-[200px] object-cover shadow-md" />
+            <div className="mt-5 flex flex-col gap-3">
+              <div className="flex flex-row justify-between items-center">
+                <h4 className="font-semibold font-istokweb text-[1.4rem]">Fête de la musique</h4>
+                <span className="rounded-[10px] bg-[#ffb7b7] text-[#fc2a2a] text-[0.7rem] px-2  flex items-center">TERMINÉ</span>
+              </div>
+              <div className="flex flex-row gap-2 items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(100,116,139)" class="bi bi-calendar2-week" viewBox="0 0 16 16">
+                  <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M2 2a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1z" />
+                  <path d="M2.5 4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H3a.5.5 0 0 1-.5-.5zM11 7.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm-3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm-5 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5z" />
+                </svg>
+                <p className="font-poppins text-[#64748B] text-[0.8rem]">22 juin 2025, 14h00 - 19h00 </p>
+              </div>
+              <div className="flex flex-row gap-2 items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="rgb(100,116,139)" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                  <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10" />
+                  <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
+                </svg>
+                <p className="font-poppins text-[#64748B] text-[0.7rem]">Lée 64320</p>
+              </div>
+              <p className="text-justify font-istokweb text-[1.0rem] leading-relaxed text-[#64748B] mt-5">Que vous aimiez danser ou simplement écouter de la musique, venez passer une après-midi conviviale et festive. Laissez-vous porter par l’ambiance, partagez un bon moment et repartez avec de beaux souvenirs, seul, en famille ou entre amis (<a className="text-blue-700 font-semibold" target="_blank" href="https://www.facebook.com/events/1189710636240998">en savoir plus</a>) </p>
             </div>
-            <div className="flex flex-row gap-2 items-center">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(100,116,139)" class="bi bi-calendar2-week" viewBox="0 0 16 16">
-                <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M2 2a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1z" />
-                <path d="M2.5 4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H3a.5.5 0 0 1-.5-.5zM11 7.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm-3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm-5 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5z" />
-              </svg>
-              <p className="font-poppins text-[#64748B] text-[0.8rem]">22 juin 2025, 14h00 - 19h00 </p>
+          </div>
+
+          {/* Event 2 */}
+          <div className="bg-white rounded-[10px]  border-b-2 border-b-[#FF7723] flex flex-col items-center mt-10 px-6 py-6 w-[25rem]">
+            <img src={EventImage2} alt="Image de l'évènement" className="w-full h-[200px] object-cover shadow-md" />
+            <div className="mt-5 flex flex-col gap-3">
+              <div className="flex flex-row justify-between items-center">
+                <h4 className="font-semibold font-istokweb text-[1.4rem]">Danse ta ville</h4>
+                <span className="rounded-[10px] bg-[#ffe7b7] text-[#FCC12A] text-[0.7rem] px-2  flex items-center">A VENIR</span>
+              </div>
+              <div className="flex flex-row gap-2 items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(100,116,139)" class="bi bi-calendar2-week" viewBox="0 0 16 16">
+                  <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M2 2a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1z" />
+                  <path d="M2.5 4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H3a.5.5 0 0 1-.5-.5zM11 7.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm-3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm-5 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5z" />
+                </svg>
+                <p className="font-poppins text-[#64748B] text-[0.8rem]">05 Septembre 2025, 19h00 - 23h00 </p>
+              </div>
+              <div className="flex flex-row gap-2 items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="rgb(100,116,139)" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                  <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10" />
+                  <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
+                </svg>
+                <p className="font-poppins text-[#64748B] text-[0.7rem]">Pau 64000</p>
+              </div>
+              <p className="text-justify font-istokweb text-[1.0rem] leading-relaxed text-[#64748B] mt-5">L’été sera caliente ! La Ville de Pau s’associe aux associations de danse afin de vous proposer onze rendez-vous conviviaux place Récaborde (sauf exception) pour expérimenter les danses de couple dehors (<a className="text-blue-700 font-semibold" target="_blank" href="https://www.tourismepau.com/offres/danse-ta-ville-bal-swing-et-concert-pau-fr-5794113/">en savoir plus</a>) </p>
             </div>
-            <div className="flex flex-row gap-2 items-center">
-              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="rgb(100,116,139)" class="bi bi-geo-alt" viewBox="0 0 16 16">
-                <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10" />
-                <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
-              </svg>
-              <p className="font-poppins text-[#64748B] text-[0.7rem]">Lée 64320</p>
-            </div>
-            <p className="text-justify font-istokweb text-[1.0rem] leading-relaxed text-[#64748B] mt-5">Que vous aimiez danser ou simplement écouter de la musique, venez passer une après-midi conviviale et festive. Laissez-vous porter par l’ambiance, partagez un bon moment et repartez avec de beaux souvenirs, seul, en famille ou entre amis (<a className="text-blue-700 font-semibold" target="_blank" href="https://www.facebook.com/events/1189710636240998">en savoir plus</a>) </p>
           </div>
         </div>
       </div>
